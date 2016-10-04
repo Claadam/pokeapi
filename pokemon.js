@@ -1,4 +1,10 @@
 var Name = $("#name-text");
+var Type = $("#type")
+
+
+
+
+
 console.log(":D")
 function getPokemon() {
   console.log("getting")
