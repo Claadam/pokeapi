@@ -1,6 +1,6 @@
 var Name = $("#name-text");
-var Type = $("#type")
-var ability = $("#ability"
+var Type = $("#type");
+var ability = $("#ability");
 
 
 
@@ -10,13 +10,13 @@ function getPokemon() {
   console.log("getting")
   $.ajax({
     method: "GET",
-    url: "https://pokeapi.co/api/v2/pokemon/1",    
+    url: "https://pokeapi.co/api/v2/pokemon/100",    
     success: function(res) {
       console.log("got it")
       console.log(res)
       Name.html(res["name"] + "'s ID is " + res["id"])
       Type.html(res["name"] + "'s type is is " + res["type"])
-      ability.html
+      ability.html (res["name"] + "'s abilities are " + res[""])
     }
   })
 }
