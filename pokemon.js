@@ -11,13 +11,13 @@ function getPokemon() {
   console.log("getting")
   $.ajax({
     method: "GET",
-    url: "https://pokeapi.co/api/v2/pokemon/100",    
+    url: "https://pokeapi.co/api/v2/pokemon/666",    
     success: function(res) {
       console.log("got it")
       console.log(res)
       Name.html(res["name"] + ":")
       ID.html("ID: " + res["id"])
-      Type.html("Type(s): " +res["types"][0].type[0].name)      
+      Type.html("Type(s): " +res["types"][0].type.name)      
       ability.html ("Ability(ies): " + res["ability"])
     }
   })
