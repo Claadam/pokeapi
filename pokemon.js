@@ -1,6 +1,6 @@
 var Name = $("#name-text");
 var Type = $("#type")
-
+var ability = $("#ability"
 
 
 
@@ -16,6 +16,7 @@ function getPokemon() {
       console.log(res)
       Name.html(res["name"] + "'s ID is " + res["id"])
       Type.html(res["name"] + "'s type is is " + res["type"])
+      ability.html
     }
   })
 }
