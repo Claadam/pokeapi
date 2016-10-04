@@ -17,8 +17,7 @@ function getPokemon() {
       console.log(res)
       Name.html(res["name"] + ":")
       ID.html("ID: " + res["id"])
-      Type.html("Type(s): " +res["types"])
-      console.log("asd", res["types"])
+      Type.html("Type(s): " +res["types"].toString())      
       ability.html ("Ability(ies): " + res["ability"])
     }
   })
