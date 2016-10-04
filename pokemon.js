@@ -15,9 +15,10 @@ function getPokemon() {
     success: function(res) {
       console.log("got it")
       console.log(res)
-      Name.html(res["name"] + "'s ID is " + res["id"])
-      Type.html(res["name"] + "'s type is is " + res["types"])
-      ability.html (res["name"] + "'s abilities are " + res[""])
+      Name.html(res["name"] + ":")
+      ID.html(res["id"])
+      Type.html("Type(s)" + res["type"])
+      ability.html ("Ability(ies)")
     }
   })
 }
