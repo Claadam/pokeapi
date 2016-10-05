@@ -19,7 +19,7 @@ function getPokemon() {
   console.log("getting")
   $.ajax({
     method: "GET",
-    url: url,    
+    url: "https://pokeapi.co/api/v2/pokemon/10",    
     success: function(res) {
       console.log("got it")
       console.log(res)
