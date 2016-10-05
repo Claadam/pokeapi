@@ -1,3 +1,5 @@
+console.log("aah");
+
 var input = $("#input");
 var Name = $("#name-text");
 var ID = $("#id");
@@ -15,11 +17,12 @@ var url = "https://pokeapi.co/api/v2/pokemon/" + number
 
 
 console.log(":D")
+
 function getPokemon() {
   console.log("getting")
   $.ajax({
     method: "GET",
-    url: "https://pokeapi.co/api/v2/pokemon/10",    
+    url: "https://pokeapi.co/api/v2/pokemon/620",    
     success: function(res) {
       console.log("got it")
       console.log(res)
