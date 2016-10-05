@@ -8,7 +8,7 @@ input.keydown(function(e) {
   if (e.keyCode == "13") {
     var number = input.val();
   }
-//})
+})
 
 var url = "https://pokeapi.co/api/v2/pokemon/" + number
 
@@ -30,4 +30,3 @@ function getPokemon() {
     }
   })
 }
-
