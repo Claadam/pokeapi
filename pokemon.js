@@ -1,8 +1,9 @@
+var input = $("#input")
 var Name = $("#name-text");
 var ID = $("#id")
 var Type = $("#type");
 var ability = $("#ability");
-
+var url = 
 
 
 
