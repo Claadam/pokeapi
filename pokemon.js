@@ -10,7 +10,7 @@ input.keydown(function(e) {
   }
 })
 
-var url = "https://pokeapi.co/api/v2/pokemon/" + number
+//var url = "https://pokeapi.co/api/v2/pokemon/" + number
 
 
 
