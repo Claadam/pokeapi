@@ -1,14 +1,14 @@
-var input = $("#input")
+//var input = $("#input");
 var Name = $("#name-text");
-var ID = $("#id")
+var ID = $("#id");
 var Type = $("#type");
 var ability = $("#ability");
 
-input.keydown(function(e) {	
-  if (e.keyCode == "13") {
-    var number = input.val();
-  }
-})
+//input.keydown(function(e) {	
+//  if (e.keyCode == "13") {
+//    var number = input.val();
+//  }
+//})
 
 //var url = "https://pokeapi.co/api/v2/pokemon/" + number
 
