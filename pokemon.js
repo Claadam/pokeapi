@@ -5,6 +5,7 @@ var Name = $("#name-text");
 var ID = $("#id");
 var Type = $("#type");
 var ability = $("#ability");
+var number = 0;
 
 input.keydown(function(e) {	
   if (e.keyCode == "13") {
@@ -28,7 +29,7 @@ function getPokemon() {
       console.log(res)
       Name.html(res["name"] + ":")
       ID.html("ID: " + res["id"])
-      Type.html("Type(s): " + res["types"][0].type.forEach)      
+      Type.html("Type(s): " + res["types"][0].type.forEach())      
       ability.html ("Ability(ies): " + res["ability"])
     }
   })
