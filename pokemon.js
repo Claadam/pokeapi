@@ -6,12 +6,11 @@ var ability = $("#ability");
 
 input.keydown(function(e) {	
   if (e.keyCode == "13") {
-    var valueToSave = input.val();
-    addListItem("input", valueToSave);
+    var number = input.val();
   }
 })
 
-var url = "https://pokeapi.co/api/v2/pokemon/" + input
+var url = "https://pokeapi.co/api/v2/pokemon/" + number
 
 
 
