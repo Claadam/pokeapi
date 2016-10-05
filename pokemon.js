@@ -3,7 +3,15 @@ var Name = $("#name-text");
 var ID = $("#id")
 var Type = $("#type");
 var ability = $("#ability");
-var url = 
+
+input.keydown(function(e) {	
+  if (e.keyCode == "13") {
+    var valueToSave = input.val();
+    addListItem("input", valueToSave);
+  }
+})
+
+var url = "https://pokeapi.co/api/v2/pokemon/" + input
 
 
 
@@ -12,7 +20,7 @@ function getPokemon() {
   console.log("getting")
   $.ajax({
     method: "GET",
-    url: "https://pokeapi.co/api/v2/pokemon/100",    
+    url: url,    
     success: function(res) {
       console.log("got it")
       console.log(res)
