@@ -14,7 +14,6 @@ function getPokemon(url) {
   })
 }
 
-console.log("aah");
 
 var input = $("#input");
 var Name = $("#name-text");
@@ -28,17 +27,6 @@ input.keydown(function(e) {
     var number = input.val();
     var url = "https://pokeapi.co/api/v2/pokemon/" +  number;
     console.log(url)
-    getPokemon()
+    getPokemon(url)
   }
 })
-
-
-
-
-input.keydown(function(e) {	
-if (e.keyCode == "13") {
-
-
-
-}}
-              
