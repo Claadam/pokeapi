@@ -1,3 +1,19 @@
+function getPokemon(url) {
+  console.log("getting")
+  $.ajax({
+    method: "GET",
+    url: url,    
+    success: function(res) {
+      console.log("got it")
+      console.log(res)
+      Name.html(res["name"] + ":")
+      ID.html("ID: " + res["id"])
+      Type.html("Type(s): " + res["types"][0])      
+      ability.html ("Ability(ies): " + res["ability"])
+    }
+  })
+}
+
 console.log("aah");
 
 var input = $("#input");
@@ -12,8 +28,10 @@ input.keydown(function(e) {
     var number = input.val();
     var url = "https://pokeapi.co/api/v2/pokemon/" +  number;
     console.log(url)
+    getPokemon()
   }
 })
+
 
 
 
@@ -22,19 +40,5 @@ if (e.keyCode == "13") {
 
 
 
-function getPokemon() {
-  console.log("getting")
-  $.ajax({
-    method: "GET",
-    url: url,    
-    success: function(res) {
-      console.log("got it")
-      console.log(res)
-      Name.html(res["name"] + ":")
-      ID.html("ID: " + res["id"])
-      Type.html("Type(s): " + res["types"][0])      
-      ability.html ("Ability(ies): " + res["ability"])
-    }
-  })
-}}}
+}}
               
