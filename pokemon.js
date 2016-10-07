@@ -7,8 +7,6 @@ var Type = $("#type");
 var ability = $("#ability");
 var number = 0;
 
-input.keydown(function(e)
-
 input.keydown(function(e) {	
   if (e.keyCode == "13") {
     var number = input.val();
@@ -27,7 +25,7 @@ function getPokemon() {
   console.log("getting")
   $.ajax({
     method: "GET",
-    url: "https://pokeapi.co/api/v2/pokemon/620",    
+    url: url,    
     success: function(res) {
       console.log("got it")
       console.log(res)
