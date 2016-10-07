@@ -15,7 +15,7 @@ function getPokemon(url) {
 }
 
 function getTypes(res) {
-  console.log("yepe", res)
+  console.log(res.types)
   res.types.forEach(function(type) {
     Type.html("Type(s): " + type)
   })
