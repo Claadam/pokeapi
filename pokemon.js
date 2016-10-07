@@ -11,15 +11,16 @@ input.keydown(function(e) {
   if (e.keyCode == "13") {
     var number = input.val();
     var url = "https://pokeapi.co/api/v2/pokemon/" +  number;
-    console.log("url")
+    console.log(url)
   }
 })
 
 
 
 
-
+if (e.keyCode == "13") {
 console.log(":D")
+
 
 function getPokemon() {
   console.log("getting")
@@ -35,4 +36,4 @@ function getPokemon() {
       ability.html ("Ability(ies): " + res["ability"])
     }
   })
-}
+}}
