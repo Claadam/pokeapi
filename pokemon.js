@@ -8,10 +8,13 @@ function getPokemon(url) {
       console.log(res)
       Name.html(res["name"] + ":")
       ID.html("ID: " + res["id"])
-      Type.html("Type(s): " + res["types"][0])      
+      Type.html("Type(s): " + res["types"])      
       ability.html ("Ability(ies): " + res["ability"])
     }
   })
+}
+
+function getTypes() {
 }
 
 
