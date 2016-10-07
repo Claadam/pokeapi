@@ -3,18 +3,19 @@ function getPokemon(url) {
   $.ajax({
     method: "GET",
     url: url,    
-    success: function(res) {
+    success: function(res) {      
       console.log("got it")
       console.log(res)
       Name.html(res["name"] + ":")
       ID.html("ID: " + res["id"])
-      
+      getTypes(res)
       ability.html ("Ability(ies): " + res["ability"])
     }
   })
 }
 
 function getTypes(res) {
+  console.log("yepe", types)
   res.types.forEach(function(type) {
     Type.html("Type(s): " + type)
   })
