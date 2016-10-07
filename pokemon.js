@@ -7,6 +7,8 @@ var Type = $("#type");
 var ability = $("#ability");
 var number = 0;
 
+input.keydown(function(e)
+
 input.keydown(function(e) {	
   if (e.keyCode == "13") {
     var number = input.val();
