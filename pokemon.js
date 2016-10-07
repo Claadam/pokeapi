@@ -12,7 +12,8 @@ input.keydown(function(e)
 input.keydown(function(e) {	
   if (e.keyCode == "13") {
     var number = input.val();
-    var url = "https://pokeapi.co/api/v2/pokemon/" + number;
+    var url = "https://pokeapi.co/api/v2/pokemon/" +  number;
+    console.log("url")
   }
 })
 
@@ -32,7 +33,7 @@ function getPokemon() {
       console.log(res)
       Name.html(res["name"] + ":")
       ID.html("ID: " + res["id"])
-      Type.html("Type(s): " + res["types"][0].type.forEach())      
+      Type.html("Type(s): " + res["types"][0])      
       ability.html ("Ability(ies): " + res["ability"])
     }
   })
