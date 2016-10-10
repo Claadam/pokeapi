@@ -20,7 +20,7 @@ function getTypes(res) {
     return type.type.name
   })
   
-  Type.html(types.join(","))
+  Type.html("Types: " + types.join(", "))
 }
 
 
